@@ -1,0 +1,8 @@
+version: "1.0"
+
+services:
+  app:
+    container_name: application-prod
+    image: application-prod
+    build:
+      target: server

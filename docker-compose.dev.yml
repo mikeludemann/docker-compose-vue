@@ -1,0 +1,12 @@
+version: "1.0"
+
+services:
+  app:
+    container_name: application-dev
+    image: application-dev
+    build:
+      target: development
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 8080:8080
